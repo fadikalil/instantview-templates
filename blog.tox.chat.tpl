@@ -1,4 +1,4 @@
-?exists: //article
+?exists: //body[has-class("single-post")]
 
 title: //h1[has-class("entry-title")]
 body: //article/div[has-class("entry-content")]
