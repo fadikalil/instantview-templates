@@ -1,0 +1,9 @@
+?path: /[0-9]{4}/[0-9]{2}/.+
+$post: //div[has-class("post")]
+title: $post//h3[has-class("post-title")]
+author: $post//span[@itemprop="author"]/a/span[@itemprop="name"]
+author_url: $post//span[@itemprop="author"]/meta/@content
+published_date: $post//abbr[@itemprop="datePublished"]/@title
+@remove: $$
+@remove: $post/div[has-class("post-footer")]
+body: $post
